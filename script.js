@@ -481,7 +481,7 @@ document
 
             if (error) {
                 console.error("Supabase insert failed:", error);
-                alert("Could not post this item. Check your Supabase table and connection settings.");
+                alert(`Could not post this item: ${error.message}`);
                 return;
             }
 
